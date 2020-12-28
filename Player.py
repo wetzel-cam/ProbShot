@@ -1,18 +1,18 @@
 from random import randint as rand
 
 class Player:
-    activePlayers = {}
+    active_players = {}
 
     @staticmethod
-    def definePlayers(count):
+    def define_players(count):
         i = 0
         while i < count:
             Player("Player " + str(i+1))
             i += 1
 
     @staticmethod
-    def _addPlayer(name, playerObject):
-        Player.activePlayers[name] = playerObject
+    def _add_player(name, player_object):
+        Player.active_players[name] = player_object
 
     def __init__(self, name):
         self._name = name
@@ -21,12 +21,12 @@ class Player:
         self._wins = 0
         self._enemy = None
 
-        Player._addPlayer(self._name, self)
+        Player._add_player(self._name, self)
 
     def __str__(self):
         return self._name
 
-    def takeShot(self):
+    def take_shot(self):
         chamber = rand(1, 6)
 
         self._shots += 1
@@ -34,7 +34,7 @@ class Player:
         if chamber == 1:
             self._enemy.alive = False
 
-    def tallyWin(self):
+    def tally_win(self):
         self._wins += 1
     
     def reset(self):
