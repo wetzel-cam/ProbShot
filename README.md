@@ -4,7 +4,7 @@
 
 #### Usage:
 
-Simply run the file using `python probshot.py`. The 'Amount of games' can be any integer value greater than 0 (otherwise it just won't run any games). 'Output games' accepts `True` or `False` (not case-sensitive); this will output the wins from each game to the console. 'Modified game; accepts `True` or `False` (not case-sensitive); this will determine whether the games played will "remove bias" (see video for explanation).
+Simply run the file using `python ProbShot.py`. The 'Amount of games' can be any integer value greater than 0 (otherwise it just won't run any games). 'Output games' accepts `True` or `False` (not case-sensitive); this will output the wins from each game to the console. 'Modified game; accepts `True` or `False` (not case-sensitive); this will determine whether the games played will "remove bias" (see video for explanation).
 
 #### Note
 
